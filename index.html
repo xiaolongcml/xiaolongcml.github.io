@@ -3,34 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主页</title>
+    <title>主页 - 下载 PCL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Noto Sans SC', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        button {
-            padding: 12px 24px;
-            font-size: 16px;
-            background-color: #4CAF50;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
         }
-        button:hover {
-            background-color: #45a049;
+
+        .container {
+            padding: 40px 30px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            transform: translateY(0);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 24px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .btn {
+            padding: 14px 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(0, 114, 255, 0.6);
+            background: linear-gradient(45deg, #00b6ee, #0060d0);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .btn {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <button onclick="window.location.href='https://ghfast.top/https://github.com/PCL-Community/PCL2-CE/releases/download/2.13.3/PCL2_CE_Release_x64.exe'">下载pcl</button>
-    <button onclick="window.location.href='https://github.com/PCL-Community/PCL2-CE/releases/download/2.13.3/PCL2_CE_Release_x64.exe'">下载pcl备用链接</button>
+    <div class="container">
+        <a href="https://ghfast.top/https://github.com/PCL-Community/PCL2-CE/releases/download/2.13.3/PCL2_CE_Release_x64.exe" class="btn" download>
+            下载 PCL
+        </a>
+    </div>
+        <div class="container">
+        <a href="https://github.com/PCL-Community/PCL2-CE/releases/download/2.13.3/PCL2_CE_Release_x64.exe" class="btn" download>
+            下载 PCL，备用链接
+        </a>
+    </div>
 </body>
 </html>
