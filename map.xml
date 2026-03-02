@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.longcml.cc.cd/post1.html</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.longcml.cc.cd/post2.html</loc>
+    <!-- 请注意：文档未提供 post2.html 的具体发布日期。此处已根据文章列表的最新更新时间 (2026-02-26)，将其 lastmod 设置为一个合理的推测日期。 -->
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
